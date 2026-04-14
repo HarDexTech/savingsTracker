@@ -18,7 +18,9 @@ function DashBoard() {
         </div>
         <Button destination="+ New Goal" active="true" />
       </aside>
-      <Header></Header>
+      <main className="w-[80%] h-dvh flex flex-col gap-6">
+        <Header></Header>
+      </main>
     </section>
   );
 }
