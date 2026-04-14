@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#71f9d8",
+                        "on-tertiary-container": "#003027",
+                        "on-tertiary-fixed-variant": "#005142",
+                        "on-background": "#e2e2eb",
+                        "on-secondary-fixed": "#2e1600",
+                        "secondary": "#ffb877",
+                        "on-primary-container": "#521400",
+                        "on-surface": "#e2e2eb",
+                        "on-primary-fixed": "#390b00",
+                        "inverse-surface": "#e2e2eb",
+                        "on-tertiary": "#00382d",
+                        "inverse-on-surface": "#2e3037",
+                        "background": "#111319",
+                        "surface-variant": "#33343b",
+                        "surface-container-highest": "#33343b",
+                        "on-primary": "#5d1800",
+                        "tertiary-container": "#00a388",
+                        "tertiary": "#50dcbc",
+                        "secondary-container": "#9f5900",
+                        "surface-container-low": "#191b22",
+                        "on-tertiary-fixed": "#002019",
+                        "surface-dim": "#111319",
+                        "surface-container": "#1e1f26",
+                        "secondary-fixed-dim": "#ffb877",
+                        "surface-container-high": "#282a30",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#111319",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#842500",
+                        "on-secondary": "#4c2700",
+                        "outline-variant": "#59413a",
+                        "surface-container-lowest": "#0c0e14",
+                        "surface-bright": "#373940",
+                        "on-secondary-fixed-variant": "#6c3a00",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#ffb59d",
+                        "secondary-fixed": "#ffdcc1",
+                        "primary-fixed": "#ffdbd0",
+                        "inverse-primary": "#ab3504",
+                        "surface-tint": "#ffb59d",
+                        "primary": "#ffb59d",
+                        "outline": "#a88a81",
+                        "on-surface-variant": "#e1bfb5",
+                        "tertiary-fixed-dim": "#50dcbc",
+                        "primary-container": "#f06536",
+                        "on-secondary-container": "#ffe8d7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen overflow-hidden">
+<!-- Background Content (Dashboard Preview) -->
+<main class="w-full min-h-screen p-8 opacity-40 blur-sm pointer-events-none">
+<div class="max-w-7xl mx-auto space-y-12">
+<header class="flex justify-between items-end">
+<div class="space-y-2">
+<p class="text-on-surface-variant font-label text-xs uppercase tracking-[0.2em]">Total Portfolio</p>
+<h1 class="text-[3.5rem] font-black leading-none tracking-[-0.04em] text-on-surface">$284,920.00</h1>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="h-48 rounded-xl bg-surface-container border border-outline-variant/15 p-6"></div>
+<div class="h-48 rounded-xl bg-surface-container border border-outline-variant/15 p-6"></div>
+<div class="h-48 rounded-xl bg-surface-container border border-outline-variant/15 p-6"></div>
+</div>
+</div>
+</main>
+<!-- Modal Overlay -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md">
+<!-- Modal Card: Add Goal Modal -->
+<div class="relative w-full max-w-md bg-surface-container-low rounded-xl shadow-2xl overflow-hidden border border-outline-variant/10">
+<!-- Modal Header -->
+<div class="p-8 pb-4">
+<div class="flex items-center justify-between mb-2">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Add New Goal</h2>
+<span class="material-symbols-outlined text-primary" data-icon="target">target</span>
+</div>
+<p class="text-on-surface-variant text-sm font-medium">Define your next financial milestone.</p>
+</div>
+<!-- Modal Form Content -->
+<div class="p-8 pt-4 space-y-6">
+<!-- Goal Name Input -->
+<div class="space-y-2">
+<label class="block text-[10px] uppercase font-bold tracking-widest text-on-surface-variant ml-1">Goal Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface placeholder:text-slate-600 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="e.g. Kyoto Summer Retreat" type="text"/>
+</div>
+<!-- Amount and Deadline Grid -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Target Amount -->
+<div class="space-y-2">
+<label class="block text-[10px] uppercase font-bold tracking-widest text-on-surface-variant ml-1">Target Amount</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-primary font-semibold">$</span>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 pl-8 text-on-surface placeholder:text-slate-600 focus:ring-2 focus:ring-primary/40 transition-all outline-none" placeholder="0.00" type="number"/>
+</div>
+</div>
+<!-- Deadline Date Picker -->
+<div class="space-y-2">
+<label class="block text-[10px] uppercase font-bold tracking-widest text-on-surface-variant ml-1">Deadline</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary/40 transition-all outline-none [color-scheme:dark]" type="date"/>
+</div>
+</div>
+</div>
+<!-- Image Selection / Visual Anchor -->
+<div class="pt-2">
+<p class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-3 ml-1">Inspiration Visual</p>
+<div class="relative h-24 w-full rounded-lg overflow-hidden group border border-outline-variant/10">
+<img class="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-transform duration-700" data-alt="serene japanese zen garden with stone path and lush maple trees in morning mist luxury travel inspiration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMa8Lz3d7B8JffqwGPcdU-G9vHa79AsS0G9JoeBaZauG96Jlsff-9yxdvYcPBZVaAjGaJppPu9noeAlVOk-Lw5g20a9tMNFYofeVFcMo2CO5hkZhDQkpO8bu14lKiZ-k7fw7frP3rAhM8uWDj4nVHSNCiG6Eklbpa64FQgcxNR8vXeM8nm5La9-MCY7qrkqhCVvAywvycJNFeyfxvGmuw0C0lKSb51R68Y5JE5KSBPOGlhPRqGZC0iaLTbwwSUkLIXoBuGPMOhsYr6"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="bg-surface-container/60 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-bold text-on-surface border border-white/10">
+                                Change Cover
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="flex items-center gap-3 p-8 pt-2">
+<button class="flex-1 px-6 py-4 rounded-lg font-bold text-sm text-on-surface-variant hover:bg-white/5 transition-all">
+                    Cancel
+                </button>
+<button class="flex-[1.5] px-6 py-4 rounded-lg font-bold text-sm text-on-primary bg-gradient-to-r from-primary to-primary-container shadow-[0_0_20px_rgba(240,101,54,0.3)] active:scale-95 transition-all">
+                    Create Goal
+                </button>
+</div>
+</div>
+</div>
+<!-- Hidden Navigation Shell (Suppressed as per Transactional/Focus mandate) -->
+<!-- But keeping the visual language consistent with the shared tokens -->
+</body></html>

@@ -1,0 +1,72 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "name": "Emergency Fund",
+      "targetAmount": 5000,
+      "deadline": "2025-12-31",
+      "deposits": [
+        { "id": 1, "amount": 1200, "date": "2025-01-10", "note": "Initial deposit" },
+        { "id": 2, "amount": 800, "date": "2025-03-01", "note": "March salary savings" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vacation to Japan",
+      "targetAmount": 3000,
+      "deadline": "2025-08-01",
+      "deposits": [
+        { "id": 3, "amount": 2700, "date": "2025-02-14", "note": "Bonus payment" },
+        { "id": 4, "amount": 300, "date": "2025-04-01", "note": "Saved from groceries" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "New Laptop",
+      "targetAmount": 1500,
+      "deadline": "2025-06-30",
+      "deposits": [
+        { "id": 5, "amount": 600, "date": "2025-01-20", "note": "Freelance payment" },
+        { "id": 6, "amount": 500, "date": "2025-02-28", "note": "Side hustle" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Wedding Fund",
+      "targetAmount": 8000,
+      "deadline": "2026-03-01",
+      "deposits": [
+        { "id": 7, "amount": 1500, "date": "2025-01-31", "note": "January savings" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Home Down Payment",
+      "targetAmount": 20000,
+      "deadline": "2027-01-01",
+      "deposits": [
+        { "id": 8, "amount": 3000, "date": "2025-03-15", "note": "Tax refund" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "New Car",
+      "targetAmount": 10000,
+      "deadline": "2026-06-01",
+      "deposits": [
+        { "id": 9, "amount": 2500, "date": "2025-02-01", "note": "Q1 savings" },
+        { "id": 10, "amount": 1200, "date": "2025-04-10", "note": "April deposit" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Online Course Fund",
+      "targetAmount": 500,
+      "deadline": "2025-05-01",
+      "deposits": [
+        { "id": 11, "amount": 250, "date": "2025-01-05", "note": "First half" },
+        { "id": 12, "amount": 250, "date": "2025-02-05", "note": "Second half" }
+      ]
+    }
+  ]
+}
