@@ -1,46 +1,47 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
-  body {
-    @apply bg-gray-50 text-gray-900 antialiased;
-  }
-  h1 {
-    @apply text-3xl font-bold;
-  }
-  h2 {
-    @apply text-2xl font-semibold;
-  }
-}
+	body {
+		@apply bg-gray-50 text-gray-900 antialiased;
+	}
+	h1 {
+		@apply text-3xl font-bold;
+	}
+	h2 {
+		@apply text-2xl font-semibold;
+	}
+	:root {
+		/* Backgrounds */
+		--bg-app: #0f1117;
+		--bg-surface: #1a1d27;
+		--bg-surface-elevated: #232732;
 
-:root {
-  /* Backgrounds */
-  --bg-app: #0f1117;
-  --bg-surface: #1a1d27;
-  --bg-surface-elevated: #232732;
+		/* Brand Colors */
+		--color-primary: #e05a2b;
+		--color-primary-light: #f7a04b;
+		--color-primary-dark: #b8461f;
 
-  /* Brand Colors */
-  --color-primary: #e05a2b;
-  --color-primary-light: #f7a04b;
-  --color-primary-dark: #b8461f;
+		/* Status Colors */
+		--color-success: #2ec4a5;
+		--color-danger: #e2534b;
+		--color-warning: #f7a04b;
 
-  /* Status Colors */
-  --color-success: #2ec4a5;
-  --color-danger: #e2534b;
-  --color-warning: #f7a04b;
+		/* Typography */
+		--font-family: "Inter", sans-serif;
+		--text-main: #ffffff;
+		--text-muted: #94a3b8;
+		--text-dim: #64748b;
 
-  /* Typography */
-  --font-family: 'Inter', sans-serif;
-  --text-main: #ffffff;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+		/* Borders & Radius */
+		--border-radius: 12px;
+		--border-color: rgba(255, 255, 255, 0.05);
 
-  /* Borders & Radius */
-  --border-radius: 12px;
-  --border-color: rgba(255, 255, 255, 0.05);
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 0 15px rgba(224, 90, 43, 0.3);
+		/* Shadows */
+		--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+		--shadow-md:
+			0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		--shadow-lg:
+			0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		--shadow-glow: 0 0 15px rgba(224, 90, 43, 0.3);
+	}
 }
