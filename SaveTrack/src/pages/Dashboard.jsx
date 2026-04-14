@@ -4,7 +4,7 @@ function DashBoard() {
   return (
     <section className="bg-(--bg-app) h-dvh w-full flex flex-row items-start">
       <aside className="p-6 sidebar h-dvh w-[20%] bg-(--bg-surface-elevated) flex flex-col justify-between items-start">
-        <div className="top">
+        <div className="top w-full">
           <h1 className="text-2xl font-black text-[#ffb59d] uppercase tracking-tighter">
             SaveTrack
           </h1>
