@@ -10,12 +10,12 @@ function DashBoard() {
           </h1>
 
           <div className="btnContainer flex flex-col items-start py-6 gap-3">
-            <Button destination="Dashboard" active="false" />
-            <Button destination="Goals" active="true" />
-            <Button destination="History" active="false" />
+            <Button destination="Dashboard" active={false} />
+            <Button destination="Goals" active={true} />
+            <Button destination="History" active={false} />
           </div>
         </div>
-        <Button destination="+ New Goal" active="true" />
+        <Button destination="+ New Goal" active={true} />
       </aside>
       <main className="w-[80%] h-fit flex flex-col gap-6 mb-6">
         <Header></Header>
